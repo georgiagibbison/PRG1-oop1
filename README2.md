@@ -165,10 +165,10 @@ print(teacher.get_employee_info())
 
 ## Part 5: More Inheritance - Creating AdaStudent
 
-Now let's create an AdaStudent class that also inherits from Person:
+**Now let's create an AdaStudent class that also inherits from Person. Have a read of the code below, and then add it into the `example 2.py` file.**
 
 ```python
-```python
+
 class AdaStudent(Person):
     def __init__(self, name, date_of_birth, place_of_birth, student_id, course):
         super().__init__(name, date_of_birth, place_of_birth)
@@ -186,8 +186,7 @@ class AdaStudent(Person):
 
     @property
     def grades(self):
-        # Return a copy to prevent direct modification
-        return self._grades.copy()
+        return self._grades
 
     def study(self):
         return f"{self.name} is studying {self.course}."
@@ -346,7 +345,7 @@ Match the keyword to the definition:
 
 ## Part 8: Understanding OOP
 
-**Object-Oriented Programming (OOP)** is a programming paradigm that organizes code around objects rather than functions. The key principles are:
+**Object-Oriented Programming (OOP)** is a programming paradigm that organises code around objects rather than functions. The key principles are:
 
 1. **Encapsulation**: Bundling data and methods together, controlling access to them
 2. **Inheritance**: Creating new classes based on existing ones, promoting code reuse
@@ -354,10 +353,10 @@ Match the keyword to the definition:
 4. **Composition**: Building complex objects by combining simpler ones
 
 ### Why Use OOP?
-- **Modularity**: Code is organized into logical, reusable units
+- **Modularity**: Code is organised into logical, reusable units
 - **Reusability**: Classes can be reused and extended
 - **Maintainability**: Changes to one class don't affect others
-- **Real-world modeling**: Objects represent real-world entities naturally
+- **Real-world modeling**: Objects often represent real-world entities naturally
 
 ---
 
@@ -369,12 +368,6 @@ You've successfully:
 - Used composition to build complex relationships
 - Created 10+ objects from your classes
 - Learned the fundamental principles of OOP
-
-### Next Steps
-- Experiment with adding more methods to your classes
-- Try creating other types of relationships between classes
-- Explore more advanced OOP concepts like abstract classes and interfaces
-- Practice designing class hierarchies for different problem domains
 
 ---
 
