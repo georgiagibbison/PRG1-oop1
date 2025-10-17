@@ -88,6 +88,10 @@ class AdaStudent(Person):
 # Create AdaStudent objects
 student1 = AdaStudent("Emma Wilson", "12/03/2002", "Manchester", "STU001", "Software Development")
 student2 = AdaStudent("James Brown", "08/11/2001", "London", "STU002", "Data Science")
+student3=AdaStudent("Georgia Gibbison", "20/11/2006","Cheadle", "STU003", "CyberSecurity")
+student4=AdaStudent("Gracie-Lea Gibbison","16/06/2008", "Stockport", "STU004", "Media Studies")
+student5=AdaStudent("Vicki Gibbison", "09/04/1980", "Manchester", "STU005", "Computer Science")
+student6=AdaStudent("Phil Gibbison", "14/07/1971", "Whithington", "STU006", "Investment Banking")
 
 # Test the functionality
 print(student1.talk())  # Inherited from Person
@@ -98,7 +102,33 @@ student1.add_grade(85)
 student1.add_grade(92)
 student1.add_grade(78)
 
+student2.add_grade(84)
+student2.add_grade(20)
+student2.add_grade(58)
+
+student3.add_grade(89)
+student3.add_grade(62)
+student3.add_grade(75)
+
+student4.add_grade(95)
+student4.add_grade(42)
+student4.add_grade(68)
+
+student5.add_grade(53)
+student5.add_grade(71)
+student5.add_grade(32)
+
+student6.add_grade(78)
+student6.add_grade(62)
+student6.add_grade(48)
+
 print(student1.get_student_info())
+print(student2.get_student_info())
+print(student3.get_student_info())
+print(student4.get_student_info())
+print(student5.get_student_info())
+print(student6.get_student_info())
+
 # # Create AdaStaff objects
 # teacher1 = AdaStaff("Alice Johnson", "15/05/1985", "Birmingham", "EMP001", "Education")
 # admin = AdaStaff("Zara Sharma", "22/09/1979", "Leeds", "EMP002", "Administration")
